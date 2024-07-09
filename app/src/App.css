@@ -1,0 +1,17 @@
+html,
+body {
+  height: 100%;
+  position: relative;
+  background: var(--light-grad-pink-blue,
+      radial-gradient(circle at 10% 0%, #bf398910 0, transparent 75%),
+      radial-gradient(circle at 70% 0%, #096bde10 0, transparent 75%));
+  animation: gradientAnimation 3s ease infinite;
+
+}
+
+
+
+ul li:last-child {
+  /*color: blue;*/
+  border-radius: 0 0 5px 5px;
+}
