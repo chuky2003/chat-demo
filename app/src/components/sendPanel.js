@@ -1,4 +1,4 @@
-import React, { useContext, useState, useRef } from "react";
+import React, { useEffect, useContext, useState, useRef } from "react";
 import { UserContext } from "./ContextUser";
 import { SvgSend } from "./svgs/svgSend";
 import { io } from "socket.io-client";
@@ -42,6 +42,13 @@ export function SendPanel() {
   }
 
 
+  useEffect(() => {
+    if (textarea.current) {
+      const text = textarea.current
+      text.style.height = "auto";
+      text.style.height = Math.min(text.scrollHeight, 80) + "px";
+    }
+  }, [nuevoMensaje])
 
   return (<div className=' flex justify-between drop-shadow bg-gray-200 rounded-3xl px-4 py-2'>
     <textarea
