@@ -5,10 +5,6 @@ import { UserContext } from "./ContextUser";
 import { SendPanel } from "./sendPanel";
 
 
-
-
-
-
 export function Principal() {
 
   const { user } = useContext(UserContext)
