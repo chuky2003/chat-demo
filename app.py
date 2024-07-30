@@ -48,7 +48,6 @@ def on_leave(data):
         broadcast=True,
         to=room,
     )
-    # send(f'{username} has left the room.', to=room})
 
 
 if __name__ == "__main__":
