@@ -22,9 +22,6 @@ def handle_message(data):
     emit("message", data, broadcast=True, to=room)
 
 
-a
-
-
 @socketio.on("join")
 def on_join(data):
     username = data["username"]
